@@ -1,5 +1,53 @@
 @import url(font-awesome.min.css);
 
+/*#####################################################################################*/
+/*##################################################################################### TIPOS DE LETRA*/
+/*#####################################################################################*/
+
+@font-face {
+  font-family: 'CabinSketch-Bold';
+
+  src: url('../fonts/CabinSketch-Bold.ttf');
+  src: url('../fonts/CabinSketch-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway-Thin';
+
+  src: url('../fonts/Raleway-Thin.ttf');
+  src: url('../fonts/Raleway-Thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway-Regular';
+
+  src: url('../fonts/Raleway-Regular.ttf');
+  src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway-Light';
+
+  src: url('../fonts/Raleway-Light.ttf');
+  src: url('../fonts/Raleway-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway-ExtraLight';
+
+  src: url('../fonts/Raleway-ExtraLight.ttf');
+  src: url('../fonts/Raleway-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway-Bold';
+
+  src: url('../fonts/Raleway-Bold.ttf');
+  src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway-Black';
+
+  src: url('../fonts/Raleway-Black.ttf');
+  src: url('../fonts/Raleway-Black.ttf') format('truetype');
+}
+
+
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -3274,7 +3322,7 @@
 
 /*######################################## COLOR DE FONDO DE LANDINGPAGE*/
 		.wrapper.style1 {
-			background-color: RGB(242, 242, 242);
+			background-color: rgba(181, 209, 235, 0.8);
 		}
 
 		.wrapper.style1-alt {
@@ -3302,6 +3350,7 @@
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
+
 			-moz-flex-direction: column;
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
@@ -3310,21 +3359,21 @@
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			min-height: 100vh;
+				min-height: 100vh;
 		}
 
 			body.is-ie .wrapper.fullscreen {
-				height: 100vh;
+				/*height: 100vh;*/
 			}
 
 			@media screen and (max-width: 1280px) {
 
 				.wrapper.fullscreen {
-					min-height: calc(100vh - 2.5em);
+					/*min-height: calc(100vh - 2.5em);*/
 				}
 
 					body.is-ie .wrapper.fullscreen {
-						height: calc(100vh - 2.5em);
+						/*height: calc(100vh - 2.5em);*/
 					}
 
 			}
@@ -3990,6 +4039,129 @@
 
 }
 
+#background-landing{
+	position: absolute;
+	top: 100px;
+	left: 100px;
 
+}
+
+.numero-horario{
+	font-family: CabinSketch-Bold;
+	font-size: 2em;
+}
+
+#monthadapter{
+	font-size: 1.35em;
+}
+
+#intro{
+	/*background-image: url("../../images/1.jpg");*/
+	/**/
+	/*background-size: cover;*/
+
+}
+
+
+#fondland {
+  	background-image: url("../../images/1.jpg");
+  	background-attachment: fixed;
+	opacity: 0.4;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1; 
+}
+
+#fond {
+  	background-image: url("../../images/2.jpg");
+  	background-attachment: fixed;
+	opacity: 0.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1; 
+}
+
+
+
+
+/* ####################################################### slide landing page*/
+
+/*.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}*/
+
+/*.thumbnail {
+    padding: 0;
+}*/
+
+/*.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+*/
+
+/*#slider{
+	background-color: red;
+	
+}*/
+.item-slider-landing{
+	margin: 2px;
+	box-shadow: 5px 5px 15px;
+}
+
+
+.coolbord a {
+    border: 1px solid transparent;
+    border-radius: 0;
+    transition: all 3s ease;
+}
+
+.coolbord a:hover {
+    border: 1px solid #ff4647;
+    border-radius: 100% 60% / 30% 10%;
+    background: linear-gradient(rgba(56,123,131,0.7),rgba(56,123,131,0.7));
+}
+
+/*################################### slider inicio */
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #e84a64;
+  border: none;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
 
 
