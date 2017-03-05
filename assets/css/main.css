@@ -4164,4 +4164,9 @@
     border-radius: 100px;
 }
 
+/* ####################################################################################  Fotos para los sliders */
+.item > .profile-circle > img{
+	height: 100%;
+}
+
 
