@@ -208,3 +208,85 @@
 	});
 
 })(jQuery);
+
+//########################################################
+//########################################################   script countdown
+//########################################################
+
+
+$("#getting-started")
+  .countdown("2017/08/06", function(event) {
+    $(this).text(
+      event.strftime('%m  %n  %H  %M  %S ')
+    );
+}); 
+
+
+$("#months")
+  .countdown("2017/08/06", function(event) {
+    $(this).text(
+      event.strftime('%m')
+    );
+}); 
+
+$("#days")
+  .countdown("2017/08/06", function(event) {
+    $(this).text(
+      event.strftime('%n')
+    );
+}); 
+
+$("#hours")
+  .countdown("2017/08/06", function(event) {
+    $(this).text(
+      event.strftime('%H')
+    );
+}); 
+
+$("#minutes")
+  .countdown("2017/08/06", function(event) {
+    $(this).text(
+      event.strftime('%M')
+    );
+}); 
+
+$("#seconds")
+  .countdown("2017/08/06", function(event) {
+    $(this).text(
+      event.strftime('%S')
+    );
+}); 
+          
+//########################################################
+//########################################################   Logica del mapa
+//########################################################
+
+function initMap() {
+//    -6.771907, -79.838491  lat y long del centro de chiclayo
+  var myLatlng = {lat: -6.771907, lng: -79.838491};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    center: myLatlng,
+    scrollwheel: false
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'Click to zoom'
+  });
+
+  map.addListener('center_changed', function() {
+    // 3 seconds after the center of the map has changed, pan back to the
+    // marker.
+    window.setTimeout(function() {
+      map.panTo(marker.getPosition());
+    }, 3000);
+  });
+
+  marker.addListener('click', function() {
+    map.setZoom(8);
+    map.setCenter(marker.getPosition());
+  });
+}

@@ -4014,6 +4014,15 @@
         max-height: 50px;
     }
 
+#three{
+	min-height: 400px;
+}
+
+#map {
+    height: 200px;
+}
+
+
 /*@media (min-width: 992px) {
     #logo{
         max-height: 50px;
