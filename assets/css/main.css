@@ -3100,7 +3100,8 @@
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+/* ############################################################################# COLOR DEL EFECTO DE DEGRADADO EN STYLE 2 */
+				background: rgba(242, 242, 242, 0.9);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3330,7 +3331,7 @@
 		}
 /*######################################## Color de fondo de  who we are?.. */
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: rgb(242, 242, 242); /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 		}
 
 		.wrapper.style2-alt {
