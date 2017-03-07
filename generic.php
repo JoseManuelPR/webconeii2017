@@ -18,12 +18,12 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
+				<a href="index.php" class="title">Hyperspace</a>
 				<nav>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="generic.php" class="active">Generic</a></li>
+						<li><a href="elements.php">Elements</a></li>
 					</ul>
 				</nav>
 			</header>
